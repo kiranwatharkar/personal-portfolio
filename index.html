@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Krik, a Front-End Developer">
+  <meta name="keywords" content="Web development, Front-End, Portfolio, Krik">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/f91eed1090.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/kriklogo.jpg" class="logo" alt="Portfolio Logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-End Developer</p>
+        <h1>HI, I'm <span>Krik</span></h1>
+      </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpeg" alt="User Profile Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Doloribus mollitia excepturi fugiat,
+            adipisci voluptate vero dolor consectetur? Optio a, in temporibus, nam est tempore et soluta
+            exercitationem qui, ea corporis?</p>
+          <!-- Tab Titles -->
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+          </div>
+          <!-- Tab Contents -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br> Designing WebApp</li>
+              <li><span>Front-End</span><br> Designing Web/App Layouts</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - current</span><br>Internship At Oasis Infobyte</li>
+              <li><span>2023-2024</span><br> Designing WebApp Training Intershala</li>
+              <li><span>2021 - 2023</span><br> Designing Web/App Layouts At Intershala Learning Platform</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Web Development</span><br> Oasis Infobyte New Delhi.</li>
+              <li><span>Front-End</span><br> Web Development From Intershala Bangalore.</li>
+              <li><span>2023</span><br>BSC From RCUB.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Front-End Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente non quo blanditiis cupiditate
+            dolorem voluptate perspiciatis, dolores tempora unde nostrum delectus possimus libero ipsum earum,
+            perferendis eaque ab porro?</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-react"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente non quo blanditiis cupiditate
+            dolorem voluptate perspiciatis, dolores tempora unde nostrum delectus possimus libero ipsum earum,
+            perferendis eaque ab porro?</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/krikwork.jpeg" alt="Work 1">
+          <div class="layer">
+            <h3>Landing Page</h3>
+            <p>This is my first web development project while learning the concepts in depth</p>
+            <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/krikworks.png" alt="Work 2">
+          <div class="layer">
+            <h3>Temperature converter</h3>
+            <p>This is my first web development project as a beginner intern</p>
+            <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+          <p><i class="fas fa-square-phone"></i> 0123456789</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-square-instagram"></i></a>
+            <a href="#"><i class="fab fa-square-twitter"></i></a>
+          </div>
+          <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="Submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Krik Made with <i class="fas fa-heart"></i> By Using Html, css and javascript </p>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+      }
+
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby73ypQcMqT8LskyBEDBoWIQg2Prs_WA_XNiE55HJgw97DHnfcwrtViD1oEoA8Cf4Ch/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Sent Sucessfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
